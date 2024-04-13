@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #84396F;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the main title section */
+.age-calculator{
+    position: fixed;
+    width: 900px;
+    height: 90px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #d797c5;
+    border-radius: 20px;
+}
+.age-calculator h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: #4B203F;
+    padding: 4px;
+}
+
+/* Styling for the container holding the form */
+.container{
+    background-color: #C974B1;
+    min-height: 100px;
+    width: 900px;
+    margin: 200px auto;
+    border-radius: 10px;
+    height: 400px;
+    position: block;
+}
+
+/* Styling for input blocks within the form */
+.block{
+    width: fit-content;
+    padding: 5px 50px;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+/* Styling for text input fields */
+input[type=text]{
+    width: 170px;
+    margin: auto;
+    outline: none;
+    min-height: 30px;
+    border: 1px solid #84396F;
+    border-radius: 5px;
+    background: #EBCBE2;
+    color: #130810;
+    font-size: 16px;
+    padding: 8px;
+    font-family: sans-serif;
+}
+input[type=text]:focus{
+    background: #ead9e5;
+    border: 1px solid #4B203F;
+}
+
+/* Styling for the calculate button */
+#calculate-age{
+    width: 150px;
+    margin-left: 300px;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: #D9E254;
+    padding: 14px 16px;
+    color: #BC519E;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#calculate-age:hover{
+    background-color: #e4eb87;
+    color: #96417e;
+    
+}
+
+/* Styling for the output section */
+.output-wrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+.output-wrapper div{
+    height: 100px;
+    width: fit-content;
+    background-color: #EBCBE2;
+    border-radius: 5px;
+    color: #4B203F;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 15px 20px #84396F;
+    font-size: 18px;
+    padding: 10px 70px;
+    margin-left: 85px;
+}
+
+span{
+    font-weight: 500;
+}
+.output-wrapper p{
+    color: #BC519E;
+    font-weight: 400;
+}
+
+/* Styling for the message area */
+#age-message {
+    color: #1f2013;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
